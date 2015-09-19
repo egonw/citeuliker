@@ -5,8 +5,8 @@ getData <- function(group=NA, user=NA, paging=NA) {
     url = paste("http://www.citeulike.org/json/group/", group, sep="")
   } else if (!is.na(user)) {
     options = "";
-    if (!is.na(paging)) {
-      options = paste("?page=", paging[0], "&per_page=", paging[1], sep="")
+    if (!missing(paging)) {
+      options = paste("?page=", paging[1], "&per_page=", paging[2], sep="")
     }
     url = paste("http://www.citeulike.org/json/user/", user, options, sep="")
   } else {
