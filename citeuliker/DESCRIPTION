@@ -5,7 +5,7 @@ Version: 0.0.1
 Date: 2015-09-19
 Author: Egon Willighagen <egon.willighagen@maastrichtuniversity.nl>
 Maintainer: Egon Willighagen <egon.willighagen@maastrichtuniversity.nl>
-Depends: jsonlite, curl
+Depends: jsonlite, curl, plyr
 Suggests: testthat
 Description: Use this package to interface with the CiteULike library.
 License: MIT + file LICENSE

@@ -1,5 +1,6 @@
-import(jsonlite)
-import(curl)
+importFrom(jsonlite, fromJSON)
+importFrom(curl, curl, new_handle, handle_setheaders)
+importFrom(plyr, laply)
 
 export(
   getData
