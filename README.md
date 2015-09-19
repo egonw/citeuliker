@@ -15,8 +15,16 @@ Advantages:
     > library(devtools)
     > install_github("egonw/citeuliker", subdir="citeuliker")
 
-# example
+# example 1: get all DOIs from a library
 
-    > library(citeuliker)
-    > data = getData(group=19781)
+    > data = citeuliker::getData(group=19781)
     > dois = na.omit(data["doi"])
+
+# example 2: from which year are publications
+
+    > barplot(table(citeuliker::getData(user="egonw")[,"year"]))
+
+# example 3: find papers with missing start/end page
+
+    > incomplete = data[complete.cases(data[,c("start_page","end_page")]),"article_id"]
+    
