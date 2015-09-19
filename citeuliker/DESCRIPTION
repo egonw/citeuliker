@@ -1,0 +1,12 @@
+Package: citeuliker
+Type: Package
+Title: citeuliker - R client library for the CiteULike API
+Version: 0.0.1
+Date: 2015-09-19
+Author: Egon Willighagen <egon.willighagen@maastrichtuniversity.nl>
+Maintainer: Egon Willighagen <egon.willighagen@maastrichtuniversity.nl>
+Depends: jsonlite, curl
+Suggests: testthat
+Description: Use this package to interface with the CiteULike library.
+License: MIT
+BugReports: https://github.com/enanomapper/citeuliker/issues

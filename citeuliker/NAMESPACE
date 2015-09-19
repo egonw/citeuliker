@@ -1,0 +1,6 @@
+import(jsonlite)
+import(curl)
+
+export(
+  getData
+)
