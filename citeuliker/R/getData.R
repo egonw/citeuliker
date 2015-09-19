@@ -16,8 +16,14 @@ getData <- function(group=NA, user=NA, paging=NA) {
   txt <- readLines(conn)
   close(conn)
   data = fromJSON(txt)
-  data["year"] <- sapply(data["published"][[1]], function(row) { row[1] })
-  data["month"] <- sapply(data["published"][[1]], function(row) { row[2] })
-  data["day"] <- sapply(data["published"][[1]], function(row) { row[3] })
+  data[,"year"] <- laply(data[,"published"], function(x) {
+    if (length(x) < 1) return(NA) else return(x[1])
+  })
+  data[,"month"] <- laply(data[,"published"], function(x) {
+    if (length(x) < 2) return(NA) else return(x[2])
+  })
+  data[,"day"] <- laply(data[,"published"], function(x) {
+    if (length(x) < 3) return(NA) else return(x[3])
+  })
   return(data)
 }
