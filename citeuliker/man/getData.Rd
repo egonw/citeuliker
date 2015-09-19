@@ -21,6 +21,7 @@ getData(group, user, paging)
 }
 \examples{
 groupList <- getData(group=19781)
+\dontrun{accountList <- getData(user="egonw")}
 # get the first (page=1) ten items in egonw's library
 accountList <- getData(user="egonw", paging=c(1,10))
 }
