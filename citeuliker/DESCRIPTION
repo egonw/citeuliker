@@ -8,5 +8,5 @@ Maintainer: Egon Willighagen <egon.willighagen@maastrichtuniversity.nl>
 Depends: jsonlite, curl
 Suggests: testthat
 Description: Use this package to interface with the CiteULike library.
-License: MIT
+License: MIT + file LICENSE
 BugReports: https://github.com/enanomapper/citeuliker/issues
